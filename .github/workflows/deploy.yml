@@ -16,7 +16,7 @@ on:
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   deploy:
-    reuns-on: ubuntu-latest
+    runs-on: ubuntu-latest
 
     steps:
     - name: Checkout source code
@@ -40,4 +40,4 @@ jobs:
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./dist
-        
+
